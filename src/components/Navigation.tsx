@@ -35,10 +35,10 @@ const Navigation = () => {
       <div className="container-custom px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="p-1.5 sm:p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-              <Activity className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+            <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
+              <Activity className="h-6 w-6 text-primary" />
             </div>
-            <span className="font-bold text-base sm:text-lg md:text-xl text-foreground">
+            <span className="font-bold text-lg md:text-xl text-foreground">
               mHealth Explained
             </span>
           </Link>
@@ -49,7 +49,7 @@ const Navigation = () => {
               <Link
                 key={link.to}
                 to={link.to}
-                className={`px-3 sm:px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                   location.pathname === link.to
                     ? 'bg-accent text-accent-foreground'
                     : 'text-muted-foreground hover:text-foreground hover:bg-accent/50'
@@ -80,7 +80,7 @@ const Navigation = () => {
                   key={link.to}
                   to={link.to}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`px-4 py-3 min-h-[44px] rounded-lg text-sm font-medium transition-colors ${
+                  className={`px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
                     location.pathname === link.to
                       ? 'bg-accent text-accent-foreground'
                       : 'text-muted-foreground hover:text-foreground hover:bg-accent/50'

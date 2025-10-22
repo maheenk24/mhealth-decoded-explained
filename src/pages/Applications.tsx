@@ -71,10 +71,10 @@ const Applications = () => {
       <main className="pt-24 md:pt-32">
         {/* Hero Section */}
         <section className="section-padding bg-gradient-subtle">
-          <div className="container-custom px-4 sm:px-6">
+          <div className="container-custom px-6">
             <div className="max-w-4xl mx-auto text-center animate-fade-in">
               <h1 className="mb-6">Real-World Applications</h1>
-              <p className="text-lg sm:text-xl text-muted-foreground">
+              <p className="text-xl text-muted-foreground">
                 How mHealth Is Transforming Care
               </p>
             </div>
@@ -83,9 +83,9 @@ const Applications = () => {
 
         {/* Introduction */}
         <section className="section-padding">
-          <div className="container-custom px-4 sm:px-6">
+          <div className="container-custom px-6">
             <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 Digital health isn't just about numbers — it's about real impact on people and
                 systems. This section uses real-world examples to show how continuous, personalized
                 data helps healthcare professionals and public health teams improve outcomes.
@@ -96,29 +96,29 @@ const Applications = () => {
 
         {/* Chronic Disease Management */}
         <section className="section-padding bg-muted/30">
-          <div className="container-custom px-4 sm:px-6">
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8 sm:mb-10 md:mb-12 animate-fade-in">
-              <div className="p-2 sm:p-3 rounded-xl bg-primary/10">
-                <HeartPulse className="h-6 w-6 sm:h-8 sm:w-8 text-primary" />
+          <div className="container-custom px-6">
+            <div className="flex items-center justify-center gap-3 mb-12 animate-fade-in">
+              <div className="p-3 rounded-xl bg-primary/10">
+                <HeartPulse className="h-8 w-8 text-primary" />
               </div>
-              <h2 className="text-center sm:text-left">Chronic Disease Management</h2>
+              <h2>Chronic Disease Management</h2>
             </div>
 
-            <div className="max-w-5xl mx-auto space-y-4 sm:space-y-6">
+            <div className="max-w-5xl mx-auto space-y-6">
               {chronicDiseaseExamples.map((example, index) => (
                 <Card
                   key={example.condition}
                   className="card-hover animate-fade-in-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <CardContent className="p-5 sm:p-6 md:p-8">
-                    <div className="grid md:grid-cols-[1fr_auto] gap-4 sm:gap-6">
+                  <CardContent className="p-8">
+                    <div className="grid md:grid-cols-[1fr_auto] gap-6">
                       <div>
-                        <h3 className="text-lg sm:text-xl font-bold mb-3 text-primary">{example.condition}</h3>
-                        <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4">
+                        <h3 className="text-xl font-bold mb-3 text-primary">{example.condition}</h3>
+                        <p className="text-muted-foreground leading-relaxed mb-4">
                           {example.description}
                         </p>
-                        <div className="bg-success/10 p-3 sm:p-4 rounded-lg">
+                        <div className="bg-success/10 p-4 rounded-lg">
                           <p className="text-sm font-medium text-success-foreground">
                             <span className="font-bold">Impact:</span> {example.impact}
                           </p>
@@ -134,23 +134,23 @@ const Applications = () => {
 
         {/* Preventive Care */}
         <section className="section-padding">
-          <div className="container-custom px-4 sm:px-6">
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8 sm:mb-10 md:mb-12 animate-fade-in">
-              <div className="p-2 sm:p-3 rounded-xl bg-secondary/10">
-                <Shield className="h-6 w-6 sm:h-8 sm:w-8 text-secondary" />
+          <div className="container-custom px-6">
+            <div className="flex items-center justify-center gap-3 mb-12 animate-fade-in">
+              <div className="p-3 rounded-xl bg-secondary/10">
+                <Shield className="h-8 w-8 text-secondary" />
               </div>
-              <h2 className="text-center sm:text-left">Preventive Care & Early Detection</h2>
+              <h2>Preventive Care & Early Detection</h2>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {preventiveCareExamples.map((example, index) => (
                 <Card
                   key={example.title}
                   className="card-hover animate-fade-in-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <CardContent className="p-4 sm:p-5 md:p-6">
-                    <h3 className="text-base sm:text-lg font-bold mb-3 text-secondary">{example.title}</h3>
+                  <CardContent className="p-6">
+                    <h3 className="text-lg font-bold mb-3 text-secondary">{example.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">{example.description}</p>
                   </CardContent>
                 </Card>
@@ -161,23 +161,23 @@ const Applications = () => {
 
         {/* Population-Level Insights */}
         <section className="section-padding bg-accent">
-          <div className="container-custom px-4 sm:px-6">
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8 sm:mb-10 md:mb-12 animate-fade-in">
-              <div className="p-2 sm:p-3 rounded-xl bg-primary/10">
-                <Users className="h-6 w-6 sm:h-8 sm:w-8 text-primary" />
+          <div className="container-custom px-6">
+            <div className="flex items-center justify-center gap-3 mb-12 animate-fade-in">
+              <div className="p-3 rounded-xl bg-primary/10">
+                <Users className="h-8 w-8 text-primary" />
               </div>
-              <h2 className="text-center sm:text-left">Population-Level Insights</h2>
+              <h2>Population-Level Insights</h2>
             </div>
 
-            <div className="max-w-5xl mx-auto space-y-4 sm:space-y-6">
+            <div className="max-w-5xl mx-auto space-y-6">
               {populationExamples.map((example, index) => (
                 <Card
                   key={example.title}
                   className="card-hover animate-fade-in-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <CardContent className="p-4 sm:p-5 md:p-6">
-                    <h3 className="text-base sm:text-lg font-bold mb-3">{example.title}</h3>
+                  <CardContent className="p-6">
+                    <h3 className="text-lg font-bold mb-3">{example.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">{example.description}</p>
                   </CardContent>
                 </Card>
@@ -188,13 +188,13 @@ const Applications = () => {
 
         {/* Micro to Macro */}
         <section className="section-padding">
-          <div className="container-custom px-4 sm:px-6">
+          <div className="container-custom px-6">
             <div className="max-w-3xl mx-auto text-center animate-fade-in">
-              <div className="inline-flex p-3 sm:p-4 rounded-2xl bg-primary/10 mb-6">
-                <TrendingUp className="h-8 w-8 sm:h-10 sm:w-10 text-primary" />
+              <div className="inline-flex p-4 rounded-2xl bg-primary/10 mb-6">
+                <TrendingUp className="h-10 w-10 text-primary" />
               </div>
               <h2 className="mb-6">From Individual to Population Impact</h2>
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 The power of mHealth lies in its dual impact: improving individual health outcomes
                 while contributing to broader public health insights.
               </p>

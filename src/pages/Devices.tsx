@@ -75,10 +75,10 @@ const Devices = () => {
       <main className="pt-24 md:pt-32">
         {/* Hero Section */}
         <section className="section-padding bg-gradient-subtle">
-          <div className="container-custom px-4 sm:px-6">
+          <div className="container-custom px-6">
             <div className="max-w-4xl mx-auto text-center animate-fade-in">
               <h1 className="mb-6">mHealth Devices & Apps</h1>
-              <p className="text-lg sm:text-xl text-muted-foreground">
+              <p className="text-xl text-muted-foreground">
                 Real Tools That Power Modern Health
               </p>
             </div>
@@ -87,9 +87,9 @@ const Devices = () => {
 
         {/* Introduction */}
         <section className="section-padding">
-          <div className="container-custom px-4 sm:px-6">
+          <div className="container-custom px-6">
             <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 This page spotlights the devices and apps transforming how we understand our bodies
                 and manage health — organized by category, with quick summaries of what each does and
                 why it matters.
@@ -100,25 +100,25 @@ const Devices = () => {
 
         {/* Wearables */}
         <section className="section-padding bg-muted/30">
-          <div className="container-custom px-4 sm:px-6">
-            <h2 className="mb-8 sm:mb-10 md:mb-12 animate-fade-in">Wearables</h2>
+          <div className="container-custom px-6">
+            <h2 className="mb-12 animate-fade-in">Wearables</h2>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {wearables.map((device, index) => (
                 <Card
                   key={device.name}
                   className="card-hover animate-fade-in-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <CardHeader className="p-4 sm:p-5 md:p-6">
+                  <CardHeader>
                     <div className="flex items-start justify-between gap-4 mb-4">
-                      <div className="p-2 sm:p-3 rounded-xl bg-primary/10">
-                        <device.icon className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+                      <div className="p-3 rounded-xl bg-primary/10">
+                        <device.icon className="h-6 w-6 text-primary" />
                       </div>
                     </div>
-                    <CardTitle className="text-base sm:text-lg">{device.name}</CardTitle>
+                    <CardTitle className="text-lg">{device.name}</CardTitle>
                   </CardHeader>
-                  <CardContent className="space-y-3 sm:space-y-4 p-4 sm:p-5 md:p-6 pt-0">
+                  <CardContent className="space-y-4">
                     <div>
                       <h4 className="font-semibold text-sm mb-2 text-primary">What It Tracks</h4>
                       <div className="flex flex-wrap gap-2">
@@ -146,10 +146,10 @@ const Devices = () => {
 
         {/* Smartphone Apps */}
         <section className="section-padding">
-          <div className="container-custom px-4 sm:px-6">
-            <h2 className="mb-8 sm:mb-10 md:mb-12 animate-fade-in">Smartphone Apps</h2>
+          <div className="container-custom px-6">
+            <h2 className="mb-12 animate-fade-in">Smartphone Apps</h2>
             
-            <div className="grid md:grid-cols-2 gap-4 sm:gap-6 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {apps.map((app, index) => (
                 <Card
                   key={app.name}
@@ -192,10 +192,10 @@ const Devices = () => {
 
         {/* Specialized Medical Trackers */}
         <section className="section-padding bg-accent">
-          <div className="container-custom px-4 sm:px-6">
-            <h2 className="mb-8 sm:mb-10 md:mb-12 animate-fade-in">Specialized Medical Trackers</h2>
+          <div className="container-custom px-6">
+            <h2 className="mb-12 animate-fade-in">Specialized Medical Trackers</h2>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {specialized.map((device, index) => (
                 <Card
                   key={device.name}
@@ -238,10 +238,10 @@ const Devices = () => {
 
         {/* Interactive Summary */}
         <section className="section-padding">
-          <div className="container-custom px-4 sm:px-6">
+          <div className="container-custom px-6">
             <div className="max-w-3xl mx-auto text-center animate-fade-in">
               <h2 className="mb-6">Where Your Data Goes</h2>
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 Each of these devices and apps collects valuable health data that flows through secure
                 systems to healthcare providers, researchers, and public health databases. Understanding
                 what your devices track and why it matters empowers you to use them more effectively

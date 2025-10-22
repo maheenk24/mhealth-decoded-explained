@@ -58,16 +58,16 @@ const Home = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative pt-20 sm:pt-24 md:pt-32 pb-12 sm:pb-16 md:pb-24 overflow-hidden">
+      <section className="relative pt-24 md:pt-32 pb-16 md:pb-24 overflow-hidden">
         <div className="absolute inset-0 gradient-subtle opacity-50"></div>
-        <div className="container-custom px-4 sm:px-6 relative z-10">
+        <div className="container-custom px-6 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-up">
               <h1 className="mb-6">
                 Explore mHealth & Wearables,{' '}
                 <span className="text-gradient">Made Simple</span>
               </h1>
-              <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
                 Discover how mobile health technologies and wearables are transforming personal
                 wellness, clinical care, and public health — all explained in clear, visual,
                 real-world language.
@@ -92,13 +92,13 @@ const Home = () => {
 
       {/* The Information Gap */}
       <section className="section-padding bg-muted/30">
-        <div className="container-custom px-4 sm:px-6">
+        <div className="container-custom px-6">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
             <h2 className="mb-6">The Information Gap</h2>
-            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed">
               Trying to learn mHealth? You're stuck between hype and heavy jargon.
             </p>
-            <p className="text-sm sm:text-base text-muted-foreground mt-4 leading-relaxed">
+            <p className="text-base text-muted-foreground mt-4 leading-relaxed">
               Blogs focus on buzz, videos gloss over the details, and academic papers assume you
               already speak health informatics. There's no single, credible source that connects
               everyday wearables to data, care delivery, and population health — in a way that's
@@ -110,24 +110,24 @@ const Home = () => {
 
       {/* Learning Journey */}
       <section className="section-padding">
-        <div className="container-custom px-4 sm:px-6">
-          <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+        <div className="container-custom px-6">
+          <div className="text-center mb-16 animate-fade-in">
             <h2 className="mb-4">From Confused to Confident</h2>
-            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Learn how mHealth really works — from devices to data to decisions.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {learningSteps.map((step, index) => (
               <Card
                 key={step.number}
                 className="card-hover animate-fade-in-up border-2"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <CardContent className="p-4 sm:p-5 md:p-6">
-                  <div className="text-3xl sm:text-4xl font-bold text-primary/20 mb-4">{step.number}</div>
-                  <h3 className="text-lg sm:text-xl font-bold mb-3">{step.title}</h3>
+                <CardContent className="p-6">
+                  <div className="text-4xl font-bold text-primary/20 mb-4">{step.number}</div>
+                  <h3 className="text-xl font-bold mb-3">{step.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">{step.description}</p>
                 </CardContent>
               </Card>
@@ -138,25 +138,25 @@ const Home = () => {
 
       {/* Expert-Backed Section */}
       <section className="section-padding bg-accent">
-        <div className="container-custom px-4 sm:px-6">
-          <div className="text-center mb-8 sm:mb-12 animate-fade-in">
+        <div className="container-custom px-6">
+          <div className="text-center mb-12 animate-fade-in">
             <h2 className="mb-4">Expert-Backed. Beginner-Friendly.</h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {assurances.map((item, index) => (
               <Card
                 key={item.title}
                 className="card-hover animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <CardContent className="p-5 sm:p-6 md:p-8">
-                  <div className="flex items-start gap-3 sm:gap-4">
-                    <div className="p-2 sm:p-3 rounded-xl bg-primary/10 flex-shrink-0">
-                      <item.icon className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+                <CardContent className="p-8">
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 rounded-xl bg-primary/10">
+                      <item.icon className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="text-base sm:text-lg font-semibold mb-3">{item.title}</h3>
+                      <h3 className="text-lg font-semibold mb-3">{item.title}</h3>
                       <p className="text-muted-foreground leading-relaxed">{item.description}</p>
                     </div>
                   </div>
@@ -169,13 +169,13 @@ const Home = () => {
 
       {/* CTA Section */}
       <section className="section-padding">
-        <div className="container-custom px-4 sm:px-6">
+        <div className="container-custom px-6">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
             <h2 className="mb-6">Your Learning Journey Starts Here</h2>
-            <p className="text-base sm:text-lg text-muted-foreground mb-8">
+            <p className="text-lg text-muted-foreground mb-8">
               Understand digital health — clearly, visually, and on your terms.
             </p>
-            <p className="text-sm sm:text-base text-muted-foreground mb-8">
+            <p className="text-base text-muted-foreground mb-8">
               Whether you're a student, a professional, or just curious, everything you need to learn
               about mHealth is one click away. No sign-up. No paywall.
             </p>

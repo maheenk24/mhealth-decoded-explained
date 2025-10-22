@@ -71,11 +71,11 @@ const Ethics = () => {
 
       <main className="pt-24 md:pt-32">
         {/* Hero Section */}
-        <section className="pt-12 pb-6 sm:pt-16 sm:pb-8 md:pt-20 md:pb-12 bg-gradient-subtle">
-          <div className="container-custom px-4 sm:px-6">
+        <section className="pt-16 pb-8 md:pt-20 md:pb-12 bg-gradient-subtle">
+          <div className="container-custom px-6">
             <div className="max-w-4xl mx-auto text-center animate-fade-in">
               <h1 className="mb-6">Ethics & Privacy</h1>
-              <p className="text-lg sm:text-xl text-muted-foreground">
+              <p className="text-xl text-muted-foreground">
                 Protecting the Most Personal Data You Own
               </p>
             </div>
@@ -83,10 +83,10 @@ const Ethics = () => {
         </section>
 
         {/* Introduction */}
-        <section className="pt-8 pb-12 sm:pb-16 md:pt-12 md:pb-20">
-          <div className="container-custom px-4 sm:px-6">
+        <section className="pt-8 pb-16 md:pt-12 md:pb-20">
+          <div className="container-custom px-6">
             <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 With great data comes great responsibility. Health data is among the most sensitive
                 information we produce — and managing it ethically is crucial to building trust in
                 digital health.
@@ -101,21 +101,21 @@ const Ethics = () => {
 
         {/* Core Principles */}
         <section className="section-padding bg-muted/30">
-          <div className="container-custom px-4 sm:px-6">
-            <h2 className="text-center mb-8 sm:mb-10 md:mb-12 animate-fade-in">Core Ethical Principles</h2>
+          <div className="container-custom px-6">
+            <h2 className="text-center mb-12 animate-fade-in">Core Ethical Principles</h2>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {principles.map((principle, index) => (
                 <Card
                   key={principle.title}
                   className="card-hover animate-fade-in-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <CardContent className="p-5 sm:p-6 md:p-8">
-                    <div className="p-3 sm:p-4 rounded-2xl bg-primary/10 inline-flex mb-4 sm:mb-6">
-                      <principle.icon className="h-6 w-6 sm:h-8 sm:w-8 text-primary" />
+                  <CardContent className="p-8">
+                    <div className="p-4 rounded-2xl bg-primary/10 inline-flex mb-6">
+                      <principle.icon className="h-8 w-8 text-primary" />
                     </div>
-                    <h3 className="text-lg sm:text-xl font-bold mb-4">{principle.title}</h3>
+                    <h3 className="text-xl font-bold mb-4">{principle.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">{principle.description}</p>
                   </CardContent>
                 </Card>
@@ -126,32 +126,32 @@ const Ethics = () => {
 
         {/* Data Journey */}
         <section className="section-padding">
-          <div className="container-custom px-4 sm:px-6">
+          <div className="container-custom px-6">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-center mb-8 sm:mb-10 md:mb-12 animate-fade-in">
+              <h2 className="text-center mb-12 animate-fade-in">
                 How Your Data Is Protected — Every Step of the Way
               </h2>
               
-              <div className="space-y-4 sm:space-y-6">
+              <div className="space-y-6">
                 {dataJourney.map((stage, index) => (
                   <Card
                     key={stage.step}
                     className="card-hover animate-fade-in-up"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <CardContent className="p-4 sm:p-5 md:p-6">
-                      <div className="grid md:grid-cols-[auto_1fr_1fr] gap-4 sm:gap-6 items-start">
-                        <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary text-primary-foreground font-bold text-base sm:text-lg flex-shrink-0">
+                    <CardContent className="p-6">
+                      <div className="grid md:grid-cols-[auto_1fr_1fr] gap-6 items-start">
+                        <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary text-primary-foreground font-bold text-lg flex-shrink-0">
                           {index + 1}
                         </div>
                         <div>
-                          <h3 className="text-base sm:text-lg font-bold mb-2">{stage.step}</h3>
-                          <p className="text-sm sm:text-base text-muted-foreground">{stage.description}</p>
+                          <h3 className="text-lg font-bold mb-2">{stage.step}</h3>
+                          <p className="text-muted-foreground">{stage.description}</p>
                         </div>
-                        <div className="bg-success/10 p-3 sm:p-4 rounded-lg">
+                        <div className="bg-success/10 p-4 rounded-lg">
                           <div className="flex items-start gap-2">
-                            <Shield className="h-4 w-4 sm:h-5 sm:w-5 text-success flex-shrink-0 mt-0.5" />
-                            <p className="text-xs sm:text-sm text-muted-foreground">{stage.protection}</p>
+                            <Shield className="h-5 w-5 text-success flex-shrink-0 mt-0.5" />
+                            <p className="text-sm text-muted-foreground">{stage.protection}</p>
                           </div>
                         </div>
                       </div>
@@ -165,14 +165,14 @@ const Ethics = () => {
 
         {/* Your Rights */}
         <section className="section-padding bg-accent">
-          <div className="container-custom px-4 sm:px-6">
+          <div className="container-custom px-6">
             <div className="max-w-3xl mx-auto">
-              <h2 className="text-center mb-8 sm:mb-10 md:mb-12 animate-fade-in">Your Data Rights in Canada</h2>
+              <h2 className="text-center mb-12 animate-fade-in">Your Data Rights in Canada</h2>
               
-              <div className="space-y-4 sm:space-y-6 animate-fade-in-up">
+              <div className="space-y-6 animate-fade-in-up">
                 <Card className="card-hover">
-                  <CardContent className="p-4 sm:p-5 md:p-6">
-                    <h3 className="text-base sm:text-lg font-bold mb-3 text-primary">Access Your Data</h3>
+                  <CardContent className="p-6">
+                    <h3 className="text-lg font-bold mb-3 text-primary">Access Your Data</h3>
                     <p className="text-muted-foreground leading-relaxed">
                       You have the right to request and receive a copy of all health data collected
                       about you, in a readable format.
@@ -216,13 +216,13 @@ const Ethics = () => {
 
         {/* Trust Section */}
         <section className="section-padding">
-          <div className="container-custom px-4 sm:px-6">
+          <div className="container-custom px-6">
             <div className="max-w-3xl mx-auto text-center animate-fade-in">
-              <div className="inline-flex p-3 sm:p-4 rounded-2xl bg-primary/10 mb-6">
-                <Lock className="h-8 w-8 sm:h-10 sm:w-10 text-primary" />
+              <div className="inline-flex p-4 rounded-2xl bg-primary/10 mb-6">
+                <Lock className="h-10 w-10 text-primary" />
               </div>
               <h2 className="mb-6">Building Trust Through Transparency</h2>
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 The future of digital health depends on trust. When you understand how your data is
                 protected, who can access it, and what rights you have, you can engage with mHealth
                 technologies confidently.
