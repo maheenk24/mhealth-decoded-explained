@@ -107,14 +107,14 @@ const Resources = () => {
 
       <main className="pt-24 md:pt-32">
         {/* Hero Section */}
-        <section className="pt-16 pb-8 md:pt-20 md:pb-12 bg-gradient-subtle">
-          <div className="container-custom px-6">
+        <section className="pt-12 pb-6 sm:pt-16 sm:pb-8 md:pt-20 md:pb-12 bg-gradient-subtle">
+          <div className="container-custom px-4 sm:px-6">
             <div className="max-w-4xl mx-auto text-center animate-fade-in">
               <h1 className="mb-6">Resources</h1>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-lg sm:text-xl text-muted-foreground">
                 Learn, Explore, and Stay Informed
               </p>
-              <p className="text-base text-muted-foreground mt-4">
+              <p className="text-sm sm:text-base text-muted-foreground mt-4">
                 A curated library for anyone wanting to dive deeper into health data, privacy, and
                 digital innovation.
               </p>
@@ -123,26 +123,26 @@ const Resources = () => {
         </section>
 
         {/* Organizations */}
-        <section className="pt-8 pb-16 md:pt-12 md:pb-20">
-          <div className="container-custom px-6">
-            <div className="flex items-center justify-center gap-3 mb-12 animate-fade-in">
-              <div className="p-3 rounded-xl bg-primary/10">
-                <Building2 className="h-8 w-8 text-primary" />
+        <section className="pt-8 pb-12 sm:pb-16 md:pt-12 md:pb-20">
+          <div className="container-custom px-4 sm:px-6">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8 sm:mb-10 md:mb-12 animate-fade-in">
+              <div className="p-2 sm:p-3 rounded-xl bg-primary/10">
+                <Building2 className="h-6 w-6 sm:h-8 sm:w-8 text-primary" />
               </div>
-              <h2>Organizations</h2>
+              <h2 className="text-center sm:text-left">Organizations</h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-6 max-w-5xl mx-auto">
               {organizations.map((org, index) => (
                 <Card
                   key={org.name}
                   className="card-hover animate-fade-in-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <CardHeader>
-                    <CardTitle className="text-lg">{org.name}</CardTitle>
+                  <CardHeader className="p-4 sm:p-5 md:p-6">
+                    <CardTitle className="text-base sm:text-lg">{org.name}</CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="p-4 sm:p-5 md:p-6 pt-0">
                     <p className="text-muted-foreground leading-relaxed mb-4">{org.description}</p>
                     <a
                       href={org.url}
@@ -162,24 +162,24 @@ const Resources = () => {
 
         {/* Key Readings */}
         <section className="section-padding bg-muted/30">
-          <div className="container-custom px-6">
-            <div className="flex items-center justify-center gap-3 mb-12 animate-fade-in">
-              <div className="p-3 rounded-xl bg-secondary/10">
-                <BookOpen className="h-8 w-8 text-secondary" />
+          <div className="container-custom px-4 sm:px-6">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8 sm:mb-10 md:mb-12 animate-fade-in">
+              <div className="p-2 sm:p-3 rounded-xl bg-secondary/10">
+                <BookOpen className="h-6 w-6 sm:h-8 sm:w-8 text-secondary" />
               </div>
-              <h2>Key Readings</h2>
+              <h2 className="text-center sm:text-left">Key Readings</h2>
             </div>
 
-            <div className="max-w-4xl mx-auto space-y-6">
+            <div className="max-w-4xl mx-auto space-y-4 sm:space-y-6">
               {readings.map((reading, index) => (
                 <Card
                   key={reading.title}
                   className="card-hover animate-fade-in-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <CardContent className="p-6">
-                    <div className="flex items-start justify-between gap-4 mb-3">
-                      <h3 className="text-lg font-bold">{reading.title}</h3>
+                  <CardContent className="p-4 sm:p-5 md:p-6">
+                    <div className="flex flex-col sm:flex-row items-start justify-between gap-3 sm:gap-4 mb-3">
+                      <h3 className="text-base sm:text-lg font-bold">{reading.title}</h3>
                       <Badge variant="secondary">{reading.source}</Badge>
                     </div>
                     <p className="text-muted-foreground leading-relaxed mb-4">
@@ -203,22 +203,22 @@ const Resources = () => {
 
         {/* Quick Facts */}
         <section className="section-padding bg-accent">
-          <div className="container-custom px-6">
-            <div className="flex items-center justify-center gap-3 mb-12 animate-fade-in">
-              <div className="p-3 rounded-xl bg-primary/10">
-                <Lightbulb className="h-8 w-8 text-primary" />
+          <div className="container-custom px-4 sm:px-6">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8 sm:mb-10 md:mb-12 animate-fade-in">
+              <div className="p-2 sm:p-3 rounded-xl bg-primary/10">
+                <Lightbulb className="h-6 w-6 sm:h-8 sm:w-8 text-primary" />
               </div>
-              <h2>Did You Know?</h2>
+              <h2 className="text-center sm:text-left">Did You Know?</h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-6 max-w-5xl mx-auto">
               {quickFacts.map((item, index) => (
                 <Card
                   key={item.fact}
                   className="card-hover animate-fade-in-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <CardContent className="p-6">
+                  <CardContent className="p-4 sm:p-5 md:p-6">
                     <Badge className="mb-4" variant="outline">
                       {item.category}
                     </Badge>
@@ -232,18 +232,18 @@ const Resources = () => {
 
         {/* Glossary */}
         <section className="section-padding">
-          <div className="container-custom px-6">
-            <h2 className="text-center mb-12 animate-fade-in">Key Terms Glossary</h2>
+          <div className="container-custom px-4 sm:px-6">
+            <h2 className="text-center mb-8 sm:mb-10 md:mb-12 animate-fade-in">Key Terms Glossary</h2>
 
-            <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+            <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-4 sm:gap-6">
               {glossary.map((item, index) => (
                 <Card
                   key={item.term}
                   className="card-hover animate-fade-in-up"
                   style={{ animationDelay: `${index * 0.05}s` }}
                 >
-                  <CardContent className="p-6">
-                    <h3 className="text-lg font-bold mb-3 text-primary">{item.term}</h3>
+                  <CardContent className="p-4 sm:p-5 md:p-6">
+                    <h3 className="text-base sm:text-lg font-bold mb-3 text-primary">{item.term}</h3>
                     <p className="text-muted-foreground leading-relaxed">{item.definition}</p>
                   </CardContent>
                 </Card>

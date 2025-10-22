@@ -6,15 +6,15 @@ const Footer = () => {
 
   return (
     <footer className="bg-muted/30 border-t border-border">
-      <div className="container-custom px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="container-custom px-4 sm:px-6 py-8 sm:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           {/* Brand Section */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="p-2 rounded-lg bg-primary/10">
-                <Activity className="h-5 w-5 text-primary" />
+              <div className="p-1.5 sm:p-2 rounded-lg bg-primary/10">
+                <Activity className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
               </div>
-              <span className="font-bold text-lg">mHealth Explained</span>
+              <span className="font-bold text-base sm:text-lg">mHealth Explained</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Making digital health understandable for everyone. Expert-backed, beginner-friendly
@@ -24,7 +24,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-sm mb-4">Quick Links</h3>
+            <h3 className="font-semibold text-sm mb-3 sm:mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
@@ -51,7 +51,7 @@ const Footer = () => {
 
           {/* Mission */}
           <div>
-            <h3 className="font-semibold text-sm mb-4">Our Mission</h3>
+            <h3 className="font-semibold text-sm mb-3 sm:mb-4">Our Mission</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
               To demystify mHealth and wearables by providing accessible, evidence-based learning
               that connects personal devices to the bigger picture of healthcare.

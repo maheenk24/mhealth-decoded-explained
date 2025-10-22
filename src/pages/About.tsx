@@ -56,11 +56,11 @@ const About = () => {
 
       <main className="pt-24 md:pt-32">
         {/* Hero Section */}
-        <section className="pt-16 pb-8 md:pt-20 md:pb-12 bg-gradient-subtle">
-          <div className="container-custom px-6">
+        <section className="pt-12 pb-6 sm:pt-16 sm:pb-8 md:pt-20 md:pb-12 bg-gradient-subtle">
+          <div className="container-custom px-4 sm:px-6">
             <div className="max-w-4xl mx-auto text-center animate-fade-in">
               <h1 className="mb-6">About This Project</h1>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-lg sm:text-xl text-muted-foreground">
                 Making Digital Health Understandable for Everyone
               </p>
             </div>
@@ -68,10 +68,10 @@ const About = () => {
         </section>
 
         {/* Introduction */}
-        <section className="pt-8 pb-16 md:pt-12 md:pb-20">
-          <div className="container-custom px-6">
+        <section className="pt-8 pb-12 sm:pb-16 md:pt-12 md:pb-20">
+          <div className="container-custom px-4 sm:px-6">
             <div className="max-w-3xl mx-auto animate-fade-in-up">
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6">
                 Mobile health (mHealth) technologies and wearables are reshaping how we care for
                 ourselves, connect with providers, and improve public health. Yet, learning how they
                 actually work can feel overwhelming — buried in buzzwords, dense research papers, or
@@ -93,19 +93,19 @@ const About = () => {
 
         {/* Values */}
         <section className="section-padding bg-muted/30">
-          <div className="container-custom px-6">
-            <div className="grid md:grid-cols-3 gap-8">
+          <div className="container-custom px-4 sm:px-6">
+            <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
               {values.map((value, index) => (
                 <Card
                   key={value.title}
                   className="card-hover animate-fade-in-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <CardContent className="p-8 text-center">
-                    <div className="inline-flex p-4 rounded-2xl bg-primary/10 mb-6">
-                      <value.icon className="h-8 w-8 text-primary" />
+                  <CardContent className="p-5 sm:p-6 md:p-8 text-center">
+                    <div className="inline-flex p-3 sm:p-4 rounded-2xl bg-primary/10 mb-4 sm:mb-6">
+                      <value.icon className="h-6 w-6 sm:h-8 sm:w-8 text-primary" />
                     </div>
-                    <h3 className="text-xl font-bold mb-4">{value.title}</h3>
+                    <h3 className="text-lg sm:text-xl font-bold mb-4">{value.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">{value.description}</p>
                   </CardContent>
                 </Card>
@@ -116,20 +116,20 @@ const About = () => {
 
         {/* Goals */}
         <section className="section-padding">
-          <div className="container-custom px-6">
+          <div className="container-custom px-4 sm:px-6">
             <div className="max-w-3xl mx-auto animate-fade-in">
-              <h2 className="mb-8 text-center">We Aim to Help Visitors</h2>
-              <div className="space-y-4">
+              <h2 className="mb-6 sm:mb-8 text-center">We Aim to Help Visitors</h2>
+              <div className="space-y-3 sm:space-y-4">
                 {goals.map((goal, index) => (
                   <div
                     key={index}
-                    className="flex items-start gap-4 p-6 rounded-xl bg-accent/50 card-hover animate-fade-in-up"
+                    className="flex items-start gap-3 sm:gap-4 p-4 sm:p-5 md:p-6 rounded-xl bg-accent/50 card-hover animate-fade-in-up"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold">
+                    <div className="flex-shrink-0 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base">
                       {index + 1}
                     </div>
-                    <p className="text-muted-foreground leading-relaxed pt-1">{goal}</p>
+                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed pt-0.5 sm:pt-1">{goal}</p>
                   </div>
                 ))}
               </div>
@@ -143,18 +143,18 @@ const About = () => {
 
         {/* Approach */}
         <section className="section-padding bg-accent">
-          <div className="container-custom px-6">
+          <div className="container-custom px-4 sm:px-6">
             <div className="max-w-4xl mx-auto">
-              <h2 className="mb-12 text-center animate-fade-in">Our Approach</h2>
-              <div className="grid md:grid-cols-2 gap-6">
+              <h2 className="mb-8 sm:mb-10 md:mb-12 text-center animate-fade-in">Our Approach</h2>
+              <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
                 {approach.map((item, index) => (
                   <Card
                     key={item.title}
                     className="card-hover animate-fade-in-up"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <CardContent className="p-6">
-                      <h3 className="text-lg font-bold mb-3">{item.title}</h3>
+                    <CardContent className="p-4 sm:p-5 md:p-6">
+                      <h3 className="text-base sm:text-lg font-bold mb-3">{item.title}</h3>
                       <p className="text-muted-foreground leading-relaxed">{item.description}</p>
                     </CardContent>
                   </Card>
@@ -166,13 +166,13 @@ const About = () => {
 
         {/* Heart of It All */}
         <section className="section-padding">
-          <div className="container-custom px-6">
+          <div className="container-custom px-4 sm:px-6">
             <div className="max-w-3xl mx-auto text-center animate-fade-in">
-              <div className="inline-flex p-4 rounded-2xl bg-secondary/10 mb-6">
-                <BookOpen className="h-10 w-10 text-secondary" />
+              <div className="inline-flex p-3 sm:p-4 rounded-2xl bg-secondary/10 mb-6">
+                <BookOpen className="h-8 w-8 sm:h-10 sm:w-10 text-secondary" />
               </div>
               <h2 className="mb-6">The Heart of It All</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6">
                 At its core, this project is about learning made human.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
