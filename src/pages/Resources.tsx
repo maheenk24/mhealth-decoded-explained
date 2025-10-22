@@ -129,7 +129,7 @@ const Resources = () => {
               <div className="relative overflow-hidden rounded-xl shadow-lg">
                 <img 
                   src="/resources-hero.jpg" 
-                  alt="Digital health resources and innovation - modern study space with health data visualizations"
+                  alt="Hand pointing at health data graph on display - analyzing medical statistics and trends"
                   className="w-full h-auto object-cover"
                 />
               </div>
