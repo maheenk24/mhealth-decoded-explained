@@ -1,4 +1,4 @@
-import { Smartphone, Cloud, Database, BarChart3, Users, ArrowRight } from 'lucide-react';
+import { Smartphone, Cloud, Database, BarChart3, Users, ArrowDown } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -113,7 +113,7 @@ const HowItWorks = () => {
                   {/* Arrow between steps */}
                   {index < dataFlow.length - 1 && (
                     <div className="flex justify-center my-6">
-                      <ArrowRight className="h-8 w-8 text-primary/40" />
+                      <ArrowDown className="h-8 w-8 text-primary/40" />
                     </div>
                   )}
                 </div>
