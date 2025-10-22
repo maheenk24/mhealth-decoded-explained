@@ -56,7 +56,7 @@ const About = () => {
 
       <main className="pt-24 md:pt-32">
         {/* Hero Section */}
-        <section className="section-padding bg-gradient-subtle">
+        <section className="pt-16 pb-8 md:pt-20 md:pb-12 bg-gradient-subtle">
           <div className="container-custom px-6">
             <div className="max-w-4xl mx-auto text-center animate-fade-in">
               <h1 className="mb-6">About This Project</h1>
@@ -68,7 +68,7 @@ const About = () => {
         </section>
 
         {/* Introduction */}
-        <section className="section-padding">
+        <section className="pt-8 pb-16 md:pt-12 md:pb-20">
           <div className="container-custom px-6">
             <div className="max-w-3xl mx-auto animate-fade-in-up">
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
