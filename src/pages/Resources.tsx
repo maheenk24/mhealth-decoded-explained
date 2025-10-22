@@ -122,6 +122,22 @@ const Resources = () => {
           </div>
         </section>
 
+        {/* Featured Image */}
+        <section className="py-8 md:py-12">
+          <div className="container-custom px-6">
+            <div className="max-w-4xl mx-auto animate-fade-in">
+              <div className="relative overflow-hidden rounded-xl shadow-lg">
+                <img 
+                  src="/resources-hero.jpg" 
+                  alt="Modern health technology workspace with digital medical data visualizations"
+                  className="w-full h-auto object-cover"
+                  style={{ aspectRatio: '16/9' }}
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Organizations */}
         <section className="pt-8 pb-16 md:pt-12 md:pb-20">
           <div className="container-custom px-6">
