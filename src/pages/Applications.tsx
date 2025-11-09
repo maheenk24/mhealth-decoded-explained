@@ -118,8 +118,8 @@ const Applications = () => {
                         <p className="text-muted-foreground leading-relaxed mb-4">
                           {example.description}
                         </p>
-                        <div className="bg-success/10 p-4 rounded-lg">
-                          <p className="text-sm font-medium text-success-foreground">
+                        <div className="bg-primary/10 p-4 rounded-lg">
+                          <p className="text-sm font-medium text-primary">
                             <span className="font-bold">Impact:</span> {example.impact}
                           </p>
                         </div>
