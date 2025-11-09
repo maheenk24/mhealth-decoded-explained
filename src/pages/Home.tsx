@@ -122,13 +122,13 @@ const Home = () => {
             {learningSteps.map((step, index) => (
               <Card
                 key={step.number}
-                className="card-hover animate-fade-in-up border-2"
+                className="card-hover animate-fade-in-up border-2 transition-all duration-300 hover:bg-gradient-to-br hover:from-secondary hover:to-primary hover:text-primary-foreground group"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardContent className="p-6">
-                  <div className="text-4xl font-bold text-primary/20 mb-4">{step.number}</div>
-                  <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{step.description}</p>
+                  <div className="text-4xl font-bold text-primary/20 group-hover:text-primary-foreground/30 mb-4 transition-colors">{step.number}</div>
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary-foreground transition-colors">{step.title}</h3>
+                  <p className="text-muted-foreground group-hover:text-primary-foreground/90 leading-relaxed transition-colors">{step.description}</p>
                 </CardContent>
               </Card>
             ))}
