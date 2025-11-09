@@ -73,7 +73,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden py-4 animate-fade-in">
+          <div className="lg:hidden py-4 animate-fade-in bg-primary rounded-lg mt-2">
             <div className="flex flex-col gap-2">
               {navLinks.map((link) => (
                 <Link
@@ -82,8 +82,8 @@ const Navigation = () => {
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
                     location.pathname === link.to
-                      ? 'bg-accent text-accent-foreground'
-                      : 'text-muted-foreground hover:text-foreground hover:bg-accent/50'
+                      ? 'bg-white/20 text-white'
+                      : 'text-white/80 hover:text-white hover:bg-white/20'
                   }`}
                 >
                   {link.label}
