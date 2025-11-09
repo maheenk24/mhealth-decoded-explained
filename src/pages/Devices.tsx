@@ -69,7 +69,7 @@ const Devices = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-secondary/40 via-secondary/10 via-50% to-white">
+    <div className="min-h-screen bg-gradient-to-br from-secondary/40 via-white via-30% to-white">
       <Navigation />
 
       <main className="pt-24 md:pt-32">
