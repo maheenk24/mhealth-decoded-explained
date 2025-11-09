@@ -84,25 +84,25 @@ const HowItWorks = () => {
               {dataFlow.map((item, index) => (
                 <div key={item.step}>
                   <Card
-                    className="card-hover animate-fade-in-up"
+                    className="card-hover animate-fade-in-up transition-all duration-300 hover:bg-gradient-to-br hover:from-primary/90 hover:to-primary group"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     <CardContent className="p-8">
                       <div className="grid md:grid-cols-[auto_1fr] gap-6 items-start">
                         {/* Icon and Step Number */}
                         <div className="flex flex-col items-center gap-4">
-                          <div className="p-6 rounded-2xl bg-primary/10">
-                            <item.icon className="h-12 w-12 text-primary" />
+                          <div className="p-6 rounded-2xl bg-primary/10 group-hover:bg-primary-foreground/20 transition-colors">
+                            <item.icon className="h-12 w-12 text-primary group-hover:text-primary-foreground transition-colors" />
                           </div>
-                          <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg">
+                          <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground group-hover:bg-primary-foreground group-hover:text-primary flex items-center justify-center font-bold text-lg transition-colors">
                             {item.step}
                           </div>
                         </div>
 
                         {/* Content */}
                         <div>
-                          <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
-                          <p className="text-lg text-muted-foreground leading-relaxed">
+                          <h3 className="text-2xl font-bold mb-4 group-hover:text-primary-foreground transition-colors">{item.title}</h3>
+                          <p className="text-lg text-muted-foreground group-hover:text-primary-foreground/90 leading-relaxed transition-colors">
                             {item.description}
                           </p>
                         </div>
