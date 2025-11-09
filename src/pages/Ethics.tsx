@@ -66,7 +66,7 @@ const Ethics = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-secondary/20 to-white">
       <Navigation />
 
       <main className="pt-24 md:pt-32">
