@@ -51,7 +51,7 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-secondary/30 via-white via-30% to-white">
+    <div className="min-h-screen bg-gradient-to-b from-secondary/20 via-white via-30% to-white">
       <Navigation />
 
       <main className="pt-24 md:pt-32">
