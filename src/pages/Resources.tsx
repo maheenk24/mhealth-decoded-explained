@@ -102,7 +102,7 @@ const Resources = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-secondary/20 to-white">
+    <div className="min-h-screen bg-gradient-to-br from-secondary/40 via-secondary/10 via-50% to-white">
       <Navigation />
 
       <main className="pt-24 md:pt-32">
