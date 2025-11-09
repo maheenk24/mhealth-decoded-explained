@@ -12,31 +12,37 @@ const Home = () => {
       number: '01',
       title: 'Start with the Basics',
       description: 'What is mHealth? Understand how phones, apps, and wearables track data like heart rate, sleep, and steps.',
+      link: '/how-it-works',
     },
     {
       number: '02',
       title: 'Follow the Data',
       description: 'Visual explainers show how your health data flows from devices to doctors, databases, and public health systems.',
+      link: '/how-it-works',
     },
     {
       number: '03',
       title: 'See It in Action',
       description: 'Real-world examples reveal how mHealth supports care for chronic diseases, preventive screenings, and wellness plans.',
+      link: '/devices',
     },
     {
       number: '04',
       title: 'Understand Ethics & Privacy',
       description: "Learn how consent, interoperability, and data protection work behind the scenes to keep your information safe.",
+      link: '/ethics',
     },
     {
       number: '05',
       title: 'Zoom Out to the Big Picture',
       description: 'See how your personal data helps drive population-level insights and smarter healthcare policies.',
+      link: '/applications',
     },
     {
       number: '06',
       title: "Apply What You've Learned",
       description: "Walk away able to use wearables more effectively and talk digital health with clarity — in class, clinics, or conversation.",
+      link: '/applications',
     },
   ];
 
@@ -120,17 +126,18 @@ const Home = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {learningSteps.map((step, index) => (
-              <Card
-                key={step.number}
-                className="card-hover animate-fade-in-up border-2 transition-all duration-300 hover:bg-gradient-to-br hover:from-secondary hover:to-primary hover:text-primary-foreground group"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <CardContent className="p-6">
-                  <div className="text-4xl font-bold text-primary/20 group-hover:text-primary-foreground/30 mb-4 transition-colors">{step.number}</div>
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary-foreground transition-colors">{step.title}</h3>
-                  <p className="text-muted-foreground group-hover:text-primary-foreground/90 leading-relaxed transition-colors">{step.description}</p>
-                </CardContent>
-              </Card>
+              <Link key={step.number} to={step.link}>
+                <Card
+                  className="card-hover animate-fade-in-up border-2 transition-all duration-300 hover:bg-gradient-to-br hover:from-secondary hover:to-primary hover:text-primary-foreground group cursor-pointer"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <CardContent className="p-6">
+                    <div className="text-4xl font-bold text-primary/20 group-hover:text-primary-foreground/30 mb-4 transition-colors">{step.number}</div>
+                    <h3 className="text-xl font-bold mb-3 group-hover:text-primary-foreground transition-colors">{step.title}</h3>
+                    <p className="text-muted-foreground group-hover:text-primary-foreground/90 leading-relaxed transition-colors">{step.description}</p>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
