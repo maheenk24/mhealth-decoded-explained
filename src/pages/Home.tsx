@@ -132,7 +132,7 @@ const Home = () => {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CardContent className="p-6">
-                    <div className="text-5xl font-bold text-primary/20 group-hover:text-primary-foreground/30 mb-4 transition-colors">{step.number}</div>
+                    <div className="text-4xl font-bold text-primary/20 group-hover:text-primary-foreground/30 mb-4 transition-colors">{step.number}</div>
                     <h3 className="text-xl font-bold mb-3 group-hover:text-primary-foreground transition-colors">{step.title}</h3>
                     <p className="text-muted-foreground group-hover:text-primary-foreground/90 leading-relaxed transition-colors">{step.description}</p>
                   </CardContent>
