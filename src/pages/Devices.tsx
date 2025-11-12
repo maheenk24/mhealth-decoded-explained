@@ -81,6 +81,14 @@ const Devices = () => {
               <p className="text-xl text-muted-foreground">
                 Real Tools That Power Modern Health
               </p>
+              <div className="flex justify-center mt-8 animate-fade-in">
+                <img 
+                  src="/placeholder.svg" 
+                  alt="Collection of wearable health devices including smartwatches and fitness trackers"
+                  className="max-w-3xl w-full h-auto rounded-xl shadow-lg object-cover"
+                  style={{ aspectRatio: '16/9' }}
+                />
+              </div>
             </div>
           </div>
         </section>

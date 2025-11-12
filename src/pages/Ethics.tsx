@@ -78,6 +78,14 @@ const Ethics = () => {
               <p className="text-xl text-muted-foreground">
                 Protecting the Most Personal Data You Own
               </p>
+              <div className="flex justify-center mt-8 animate-fade-in">
+                <img 
+                  src="/placeholder.svg" 
+                  alt="Data security and privacy protection in digital health"
+                  className="max-w-3xl w-full h-auto rounded-xl shadow-lg object-cover"
+                  style={{ aspectRatio: '16/9' }}
+                />
+              </div>
             </div>
           </div>
         </section>

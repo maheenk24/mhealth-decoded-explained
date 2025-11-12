@@ -77,6 +77,14 @@ const Applications = () => {
               <p className="text-xl text-muted-foreground">
                 How mHealth Is Transforming Care
               </p>
+              <div className="flex justify-center mt-8 animate-fade-in">
+                <img 
+                  src="/placeholder.svg" 
+                  alt="Healthcare professionals using mHealth technology to improve patient care"
+                  className="max-w-3xl w-full h-auto rounded-xl shadow-lg object-cover"
+                  style={{ aspectRatio: '16/9' }}
+                />
+              </div>
             </div>
           </div>
         </section>

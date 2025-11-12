@@ -55,6 +55,14 @@ const HowItWorks = () => {
               <p className="text-xl text-muted-foreground">
                 From Your Device to the Health System — Explained Simply
               </p>
+              <div className="flex justify-center mt-8 animate-fade-in">
+                <img 
+                  src="/placeholder.svg" 
+                  alt="Data flow visualization from wearable devices to health systems"
+                  className="max-w-3xl w-full h-auto rounded-xl shadow-lg object-cover"
+                  style={{ aspectRatio: '16/9' }}
+                />
+              </div>
             </div>
           </div>
         </section>
