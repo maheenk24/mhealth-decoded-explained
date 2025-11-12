@@ -38,9 +38,9 @@ const Resources = () => {
     },
     {
       title: 'The Role of Wearables in Patient Monitoring',
-      source: 'Canadian Journal of Health Informatics',
+      source: 'PubMed Central',
       description: 'Research on how wearable devices are transforming patient care and clinical decision-making.',
-      url: 'https://cjhi.ingentaconnect.com/',
+      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC9330198/',
     },
     {
       title: 'Ethical AI in Healthcare',
