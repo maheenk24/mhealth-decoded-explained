@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import heroImage from '@/assets/hero-health-tech.jpg';
+import heroImage from '@/assets/hero-home.jpg';
 
 const Home = () => {
   const learningSteps = [
@@ -88,7 +88,7 @@ const Home = () => {
             <div className="relative animate-scale-in">
               <img
                 src={heroImage}
-                alt="Digital health visualization showing data from wearables"
+                alt="Person wearing a smartwatch checking their health data"
                 className="rounded-2xl shadow-2xl"
               />
             </div>
