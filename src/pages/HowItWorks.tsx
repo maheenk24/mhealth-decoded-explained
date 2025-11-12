@@ -193,7 +193,7 @@ const HowItWorks = () => {
                 health data doesn't exist in isolation — it's part of a larger network designed to
                 improve care for individuals and populations alike.
               </p>
-              <p className="text-base text-muted-foreground">
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 Understanding this flow helps you make informed decisions about which devices to use,
                 how to share your data, and what questions to ask your healthcare providers.
               </p>
