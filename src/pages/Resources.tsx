@@ -15,7 +15,7 @@ const Resources = () => {
     {
       name: 'Canada Health Infoway',
       description: 'Independent organization advancing digital health across Canada.',
-      url: 'https://www.infoway-inforoute.ca/',
+      url: 'https://www.infoway-inforoute.ca/en/',
     },
     {
       name: 'Canadian Institute for Health Information (CIHI)',
