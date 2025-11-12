@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import heroDevices from '@/assets/hero-devices.jpg';
 
 const Devices = () => {
   const wearables = [
@@ -81,6 +82,14 @@ const Devices = () => {
               <p className="text-xl text-muted-foreground">
                 Real Tools That Power Modern Health
               </p>
+              <div className="mt-8">
+                <img 
+                  src={heroDevices} 
+                  alt="Collection of wearable health devices and smartphone apps"
+                  className="w-full rounded-xl shadow-lg animate-fade-in"
+                  style={{ aspectRatio: '16/9', objectFit: 'cover' }}
+                />
+              </div>
             </div>
           </div>
         </section>

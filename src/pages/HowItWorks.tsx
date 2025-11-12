@@ -2,6 +2,7 @@ import { Smartphone, Cloud, Database, BarChart3, Users, ArrowDown } from 'lucide
 import { Card, CardContent } from '@/components/ui/card';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import heroHowItWorks from '@/assets/hero-how-it-works.jpg';
 
 const HowItWorks = () => {
   const dataFlow = [
@@ -55,6 +56,14 @@ const HowItWorks = () => {
               <p className="text-xl text-muted-foreground">
                 From Your Device to the Health System — Explained Simply
               </p>
+              <div className="mt-8">
+                <img 
+                  src={heroHowItWorks} 
+                  alt="Data flow from wearable devices to healthcare systems"
+                  className="w-full rounded-xl shadow-lg animate-fade-in"
+                  style={{ aspectRatio: '16/9', objectFit: 'cover' }}
+                />
+              </div>
             </div>
           </div>
         </section>

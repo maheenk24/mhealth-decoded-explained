@@ -2,6 +2,7 @@ import { Shield, Lock, Eye, Scale, CheckCircle2 } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import heroEthics from '@/assets/hero-ethics.jpg';
 
 const Ethics = () => {
   const principles = [
@@ -78,6 +79,14 @@ const Ethics = () => {
               <p className="text-xl text-muted-foreground">
                 Protecting the Most Personal Data You Own
               </p>
+              <div className="mt-8">
+                <img 
+                  src={heroEthics} 
+                  alt="Digital security and data privacy protection"
+                  className="w-full rounded-xl shadow-lg animate-fade-in"
+                  style={{ aspectRatio: '16/9', objectFit: 'cover' }}
+                />
+              </div>
             </div>
           </div>
         </section>

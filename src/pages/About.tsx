@@ -2,6 +2,7 @@ import { Target, Eye, Heart, BookOpen } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import heroAbout from '@/assets/hero-about.jpg';
 
 const About = () => {
   const values = [
@@ -63,6 +64,14 @@ const About = () => {
               <p className="text-xl text-muted-foreground">
                 Making Digital Health Understandable for Everyone
               </p>
+              <div className="mt-8">
+                <img 
+                  src={heroAbout} 
+                  alt="Diverse group learning about digital health technology"
+                  className="w-full rounded-xl shadow-lg animate-fade-in"
+                  style={{ aspectRatio: '16/9', objectFit: 'cover' }}
+                />
+              </div>
             </div>
           </div>
         </section>

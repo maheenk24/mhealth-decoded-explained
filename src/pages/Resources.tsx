@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import heroResources from '@/assets/hero-resources.jpg';
 
 const Resources = () => {
   const organizations = [
@@ -118,6 +119,14 @@ const Resources = () => {
                 A curated library for anyone wanting to dive deeper into health data, privacy, and
                 digital innovation.
               </p>
+              <div className="mt-8">
+                <img 
+                  src={heroResources} 
+                  alt="Library with educational resources and digital learning materials"
+                  className="w-full rounded-xl shadow-lg animate-fade-in"
+                  style={{ aspectRatio: '16/9', objectFit: 'cover' }}
+                />
+              </div>
             </div>
           </div>
         </section>

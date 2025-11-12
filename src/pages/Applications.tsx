@@ -2,6 +2,7 @@ import { HeartPulse, Shield, TrendingUp, Users } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import heroApplications from '@/assets/hero-applications.jpg';
 
 const Applications = () => {
   const chronicDiseaseExamples = [
@@ -77,6 +78,14 @@ const Applications = () => {
               <p className="text-xl text-muted-foreground">
                 How mHealth Is Transforming Care
               </p>
+              <div className="mt-8">
+                <img 
+                  src={heroApplications} 
+                  alt="Healthcare professional discussing health technology with patient"
+                  className="w-full rounded-xl shadow-lg animate-fade-in"
+                  style={{ aspectRatio: '16/9', objectFit: 'cover' }}
+                />
+              </div>
             </div>
           </div>
         </section>
