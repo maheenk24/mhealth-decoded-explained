@@ -91,7 +91,7 @@ const Applications = () => {
         </section>
 
         {/* Introduction */}
-        <section className="pt-8 pb-16">
+        <section className="pt-4 pb-16">
           <div className="container-custom px-6">
             <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
               <p className="text-lg text-muted-foreground leading-relaxed">
