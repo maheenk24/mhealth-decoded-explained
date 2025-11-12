@@ -79,7 +79,7 @@ const About = () => {
         {/* Introduction */}
         <section className="pt-8 pb-16 md:pt-12 md:pb-20">
           <div className="container-custom px-6">
-            <div className="max-w-3xl mx-auto animate-fade-in-up">
+            <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Mobile health (mHealth) technologies and wearables are reshaping how we care for
                 ourselves, connect with providers, and improve public health. Yet, learning how they
