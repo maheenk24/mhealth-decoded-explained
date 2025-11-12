@@ -118,14 +118,6 @@ const Resources = () => {
                 A curated library for anyone wanting to dive deeper into health data, privacy, and
                 digital innovation.
               </p>
-              <div className="flex justify-center mt-8 animate-fade-in">
-                <img 
-                  src="/placeholder.svg" 
-                  alt="Digital library of health resources and educational materials"
-                  className="max-w-3xl w-full h-auto rounded-xl shadow-lg object-cover"
-                  style={{ aspectRatio: '16/9' }}
-                />
-              </div>
             </div>
           </div>
         </section>

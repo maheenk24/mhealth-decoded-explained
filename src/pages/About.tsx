@@ -63,14 +63,6 @@ const About = () => {
               <p className="text-xl text-muted-foreground">
                 Making Digital Health Understandable for Everyone
               </p>
-              <div className="flex justify-center mt-8 animate-fade-in">
-                <img 
-                  src="/placeholder.svg" 
-                  alt="Digital health education and learning with technology"
-                  className="max-w-3xl w-full h-auto rounded-xl shadow-lg object-cover"
-                  style={{ aspectRatio: '16/9' }}
-                />
-              </div>
             </div>
           </div>
         </section>
