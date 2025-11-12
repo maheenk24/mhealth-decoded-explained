@@ -126,12 +126,12 @@ const Home = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {learningSteps.map((step, index) => (
-              <Link key={step.number} to={step.link}>
+              <Link key={step.number} to={step.link} className="h-full">
                 <Card
-                  className="card-hover animate-fade-in-up border-2 transition-all duration-300 hover:bg-gradient-to-br hover:from-secondary hover:to-primary hover:text-primary-foreground group cursor-pointer"
+                  className="card-hover animate-fade-in-up border-2 transition-all duration-300 hover:bg-gradient-to-br hover:from-secondary hover:to-primary hover:text-primary-foreground group cursor-pointer h-full flex flex-col"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <CardContent className="p-6">
+                  <CardContent className="p-6 flex-1 flex flex-col">
                     <div className="text-4xl font-bold text-primary/20 group-hover:text-primary-foreground/30 mb-4 transition-colors">{step.number}</div>
                     <h3 className="text-xl font-bold mb-3 group-hover:text-primary-foreground transition-colors">{step.title}</h3>
                     <p className="text-muted-foreground group-hover:text-primary-foreground/90 leading-relaxed transition-colors">{step.description}</p>
