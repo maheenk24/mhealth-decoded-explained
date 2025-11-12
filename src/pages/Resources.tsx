@@ -34,7 +34,7 @@ const Resources = () => {
       title: 'What Is mHealth?',
       source: 'WHO Digital Health Guidelines',
       description: 'Comprehensive introduction to mobile health technologies and their role in healthcare delivery.',
-      url: 'https://www.who.int/publications/i/item/9789241550505',
+      url: 'https://apps.who.int/gb/ebwha/pdf_files/wha71/a71_20-en.pdf',
     },
     {
       title: 'The Role of Wearables in Patient Monitoring',
