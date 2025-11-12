@@ -71,7 +71,7 @@ const HowItWorks = () => {
         {/* Introduction */}
         <section className="pt-8 pb-16 md:pt-12 md:pb-20">
           <div className="container-custom px-6">
-            <div className="max-w-3xl mx-auto animate-fade-in-up">
+            <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Every time you check your heart rate, log your steps, or track your sleep, your device
                 collects tiny data points — signals about your well-being. But what happens next?
