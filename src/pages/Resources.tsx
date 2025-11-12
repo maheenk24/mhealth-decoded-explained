@@ -46,7 +46,7 @@ const Resources = () => {
       title: 'Ethical AI in Healthcare',
       source: 'Health Canada Framework',
       description: 'Guidelines for ethical development and deployment of AI tools in health settings.',
-      url: 'https://www.canada.ca/en/health-canada/services/drugs-health-products/medical-devices/activities/artificial-intelligence-machine-learning.html',
+      url: 'https://www.canada.ca/en/health-canada/corporate/transparency/health-agreements/pan-canadian-ai-guiding-principles.html',
     },
   ];
 
